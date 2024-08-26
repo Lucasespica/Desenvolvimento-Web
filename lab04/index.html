@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natureza</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+</head>
+
+<body>
+    <header>
+        <h1>Natureza</h1>
+        <label>
+            <input type="checkbox" name="" id="tema">Troque para modo escuro
+        </label>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tech.html">Tecnologia</a></li>
+                <li><a href="space.html">Espaço</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Beleza Natural</h2>
+        <img src="assets/nature/nature1.avif">
+        <img src="assets/nature/nature2.avif">
+        <img src="assets/nature/nature3.avif">
+        <button class="button button1" id="toggleFooter">Esconder/Mostrar Footer</button>
+    </main>
+    <footer id="footer">
+        <h5>©2024 Tema Natureza. Todos os direitos reservados</h5>
+    </footer>
+
+    <script>
+        document.querySelector("input").onclick = () => {
+            document.body.classList.toggle("dark-mode");
+        };
+    </script>
+</body>
+
+</html>
