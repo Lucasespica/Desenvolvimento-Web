@@ -1,4 +1,14 @@
-curl http://127.0.0.1:3000/ para entrar na página principal
-curl http://127.0.0.1:3000/about para entrar em Sobre
-curl http://127.0.0.1:3000/"qualquer coisa" error 404
-curl http://127.0.0.1:3000/roda-roda para entrar no roda roda jequiti
+1. Testar a página inicial:
+curl http://127.0.0.1:3000/
+
+2. Testar a página Sobre:
+curl http://127.0.0.1:3000/about
+
+3. Testar a página de erro 404:
+curl http://127.0.0.1:3000/"digitar qualquer coisa"
+
+4. Testar quiz:
+curl http://127.0.0.1:3000/roda-roda
+
+5. Testar Upload de arquivo:
+curl -X POST -F "file=@caminho_para_arquivo/arquivo.txt" http://127.0.0.1:3000/upload
